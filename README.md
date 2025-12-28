@@ -86,16 +86,13 @@ node Xrahat.js
 ```
 
 ---
-###  🔰𝗥𝗮𝗵𝗮𝘁_𝗕𝗼𝘁🔰
-❖ ***`বট রান দিতে সমস্যা হলে ফেসবুকে যোগাযোগ করো
-❖👇নিচে আইডির লিঙ্ক আছে👇❖`** ❖
-----------
 ## Facebook ID:👉 <a href="https://www.facebook.com/share/14N3ACfd4fM/">Link</a>
 
 <p align="center">
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=cyan&center=true&vCenter=true&multiline=false&lines=`🔰𝗥𝗮𝗵𝗮𝘁_𝗕𝗼𝘁🔰`" alt="">
 </p>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+    
 ## License
 
 This project is licensed under the GNU General Public License v3.0 or later - see the [COPYING](./COPYING) file for details.
