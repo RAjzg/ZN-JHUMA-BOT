@@ -11,6 +11,8 @@ src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 _______
 ### <br>   ❖ DEPLOY_WORKFLOWS ❖
+<a><img       
+src='https://i.imgur.com/LyHic3i.gif'/></a>
 ```
 name: Node.js CI
 
@@ -49,9 +51,13 @@ jobs:
         PORT: 8080
       run: npm start
 ```
+<a><img       
+src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 ___
 ## ⚙️Installation⚙️
+<a><img       
+src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 ### 1. Repository Clone Karein
 
@@ -101,9 +107,15 @@ This project is licensed under the GNU General Public License v3.0 or later - se
 
 ---
 ### 💬 Thanks for visiting!
+<a><img       
+src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 Made by ***Rahat Islam***
+<a><img       
+src='https://i.imgur.com/LyHic3i.gif'/></a>
 ### 👇👋*original fork*👋👇
+<a><img       
+src='https://i.imgur.com/LyHic3i.gif'/></a>
 <p align="center">
   <a href="https://github.com/Boss-Rahat/Xrahat_Mirai-BOtt.git" target="_blank">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="120" alt="Fork on GitHub" style="border-radius: 50%;">
