@@ -1,8 +1,8 @@
 module.exports.config = {
-	name: "busy",
+	name: "offline",
 	version: "1.0.0",
-	permissions: 1,
-	credits: "rX",
+	permissions: 2,
+	credits: "🔰𝐑𝐀𝐇𝐀𝐓 𝐈𝐒𝐋𝐀𝐌🔰",
 	description: "Turn on or off busy mode",
   	usages: "[reason]",
   	commandCategory: "utility",
@@ -23,14 +23,14 @@ module.exports.handleEvent = async function({ api, event, Users }) {
         var info = busyData[senderID];
         delete busyData[senderID];
         fs.writeFileSync(busyPath, JSON.stringify(busyData, null, 4));
-        return api.sendMessage(`🎀─── [NOTIFICATION] ───🎀\n\n『 𝐌𝐀𝐑𝐈𝐀 』 - Welcome back, Master 🥰\n\n🎀───── •🌸• ─────🎀`, threadID, () => {
-            if (info.tag.length == 0) api.sendMessage("『 𝐌𝐀𝐑𝐈𝐀 』 - While Master was away, nobody mentioned you ❤️", threadID);
+        return api.sendMessage(`『𝗡𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻』- বস অনলাইনে এসেছে🥰`, threadID, () => {
+            if (info.tag.length == 0) api.sendMessage("『🔰𝐑𝐀𝐇𝐀𝐓 𝐁𝐎𝐓🔰』- বস তুমি যখন অফলাইনে ছিলে তখন কেউ তোমাকে ম্যানশন করে নাই🫠", threadID);
             else {
                 var msg = "";
                 for (var i of info.tag) {
                     msg += `${i}\n`
                 }
-                api.sendMessage("『 𝐌𝐀𝐑𝐈𝐀 』 - Here’s the list of people who mentioned you while you were away 🎀:\n\n" + msg, threadID)
+                api.sendMessage("『🔰𝐑𝐀𝐇𝐀𝐓 𝐁𝐎𝐓🔰』- বস তুমি যখন অফলাইনে ছিলে তখন যারা তোমাকে ম্যানশন করেছে👇:\n\n" + msg, threadID)
             }
         }, messageID);
     }
@@ -43,7 +43,7 @@ module.exports.handleEvent = async function({ api, event, Users }) {
             infoBusy.tag.push(`${mentioner}: ${replaceName == "" ? "just mentioned Master once" : replaceName}`)
             busyData[ID] = infoBusy;
             fs.writeFileSync(busyPath, JSON.stringify(busyData, null, 4));
-            return api.sendMessage(`🎀─── [NOTICE] ───🎀\n\n${name.replace("@", "")} is currently busy${infoBusy.lido ? ` with reason: ${infoBusy.lido}.\n\n🎀───── •🌸• ─────🎀` : "."}`, threadID, messageID);
+            return api.sendMessage(`👇──『𝗡𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻』──👇\n${name.replace("@", "")} বস অফলাইনে গেছে🙂‍↔️\n কোন দরকার থাকলে ম্যানশন দিয়ে লিখে যান,বস লাইনে আসলে আপনার মেসেজটি দিয়ে দিবো${infoBusy.lido ? ` with reason: ${infoBusy.lido}.` : "."}`, threadID, messageID);
         }
     }
 }
@@ -59,7 +59,7 @@ module.exports.run = async function({ api, event, args, Users }) {
             tag: []
         }
         fs.writeFileSync(busyPath, JSON.stringify(busyData, null, 4));
-        var msg = (content.length == 0) ? '[BOT CUTE] - Master just enabled busy mode without giving a reason 🐧' : `[BOT CUTE] - Master just enabled busy mode with reason 🐧: ${content}`;
+        var msg = (content.length == 0) ? '🔰──『𝗡𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻』──🔰\n বস অফলাইনে যাচ্ছে কেউ আর ম্যানশন দিয়ো না🐧' : `🔰──『𝗡𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻』──🔰\n বস অফলাইনে যাচ্ছে কেউ আর ম্যানশন দিয়ো না🐧: ${content}`;
         return api.sendMessage(msg, threadID, messageID);
     }
 }
